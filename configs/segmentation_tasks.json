@@ -1,0 +1,22 @@
+[
+    {
+      "task_name": "Dense_Tissue_from_Box",
+      "input_image": "data/input/mammogram_1.png",
+      "output_mask": "data/output/masks/mammogram_1_mask.png",
+      "output_visualization": "data/output/visualizations/mammogram_1_viz.png",
+      "prompts": {
+        "box": [350, 200, 600, 550]
+      }
+    },
+    {
+      "task_name": "Lesion_from_Text_Prompt",
+      "input_image": "data/input/mammogram_2.png",
+      "output_mask": "data/output/masks/mammogram_2_mask.png",
+      "output_visualization": "data/output/visualizations/mammogram_2_viz.png",
+      "prompts": {
+        "text": "a small white lesion",
+        "box_threshold": 0.35,
+        "text_threshold": 0.25
+      }
+    }
+  ]
